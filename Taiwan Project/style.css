@@ -1,0 +1,185 @@
+* {
+  font-family: "Noto Sans TC", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+header {
+  background-color: #c4c4c4;
+  width: 100%;
+  padding: 1rem;
+}
+
+nav {
+  background-color: #464242;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  padding: 0.5rem 0.75rem;
+}
+
+nav ul li a {
+  color: rgb(185, 185, 185);
+  text-decoration: none;
+  font-size: 1.25rem;
+  transition: all 0.25s ease;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+.headerText {
+  font-size: 1rem;
+}
+
+.headerTitle {
+  font-size: 3rem;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.left,
+section.right {
+  padding: 1.5rem;
+}
+
+section.right h4 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+section.right {
+  display: flex;
+  /* background-color: #c4c4c4; */
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 250px;
+}
+
+section.right p {
+  margin: 1rem 0rem;
+}
+
+section.right iframe {
+  border-radius: 30px;
+}
+
+section.left {
+  flex: 4 1 550px;
+}
+
+section.left h1 {
+  font-size: 2rem;
+}
+
+#div.curve_chart {
+  width: 100%;
+  height: 80%;
+  margin: auto;
+}
+
+ol {
+  margin-left: 1rem;
+}
+
+p.formula {
+  text-align: center;
+  font-size: 2rem;
+  color: red;
+}
+
+section.container {
+  flex-wrap: wrap;
+  display: flex;
+  /* flex-flow: column;
+  width: 100%; */
+}
+
+section.industry {
+  flex-flow: column;
+  /* width: 100%; */
+}
+
+section.down {
+  display: flex;
+  padding: 2rem;
+}
+
+section.down p {
+  padding: 1.5rem;
+}
+
+section {
+  font-size: 1.1rem;
+}
+
+.eco {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.eco img {
+  margin-top: 2rem;
+  width: 100%;
+  /* margin-bottom: 1rem; */
+}
+
+a {
+  color: rgb(67, 122, 104);
+}
+
+section.author {
+  flex-flow: row;
+}
+
+.headshot img {
+  padding: 2rem;
+  width: 25vh;
+  height: 25vh;
+  border-radius: 50%;
+}
+
+section.essay {
+  padding-left: 2.5rem;
+}
+
+@media screen and (max-width: 650px) {
+  header h1.headerTitle {
+    font-size: 2rem;
+  }
+  header h3.headerText {
+    font-size: 0.9rem;
+  }
+  #curve_chart {
+    width: 100%;
+    height: 40%;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav ul li a {
+    font-size: 1rem;
+  }
+  section.author {
+    flex-flow: column;
+  }
+  section.down {
+    flex-flow: column;
+  }
+}

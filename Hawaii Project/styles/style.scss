@@ -1,0 +1,359 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  top: 0;
+  position: sticky;
+  z-index: 5;
+  background-color: white;
+  box-shadow: 3px 3px 3px 2px rgb(116, 116, 116);
+  display: flex;
+  align-items: center;
+  padding: 0px 2rem;
+  flex-wrap: wrap;
+  div.logo {
+    display: flex;
+    align-items: center;
+    flex: 5 1 400px;
+    img {
+      width: 6vw;
+      height: 6vw;
+    }
+  }
+  nav {
+    flex: 2 1 400px;
+
+    ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      li {
+        a {
+          color: #09777d;
+          text-decoration: none;
+          font-size: 1.35rem;
+        }
+      }
+    }
+  }
+}
+
+main {
+  section.backImage {
+    min-height: 90vh;
+    width: 100%;
+    background-image: url("../Pictures/pexels-photo-416676.jpeg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h3 {
+      color: white;
+      text-align: center;
+      font-size: 3.5rem;
+    }
+    button.start {
+      background-color: rgb(0, 155, 155);
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      font-size: 1.5rem;
+      color: white;
+      border: none;
+      border-radius: 1rem;
+      cursor: pointer;
+    }
+    div.filter {
+      background-color: rgba($color: #000000, $alpha: 0.2);
+      width: 100%;
+      min-height: 90vh;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+  }
+  section.second {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: center;
+    text-align: center;
+    h2 {
+      font-size: 2rem;
+      span {
+        color: rgb(0, 155, 155);
+      }
+    }
+    section.cards {
+      width: 80%;
+      padding: 3rem 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      div.card {
+        display: flex;
+        flex-direction: column;
+        padding: 0rem 2rem;
+        flex: 1 1 225px;
+        justify-content: center;
+        align-items: center;
+        // text-align: center;
+        div.image-container {
+          margin: 3rem 0rem 1rem 0rem;
+          overflow: hidden;
+          border-radius: 50%;
+          width: 16vw;
+          height: 16vw;
+          img {
+            width: 16vw;
+          }
+          img:hover {
+            transform: scale(1.2);
+          }
+        }
+        h4 {
+          margin: 1rem 0rem;
+          font-size: 3rem;
+        }
+        p {
+          margin: 1rem 0rem 3rem 0rem;
+          font-size: 1.5rem;
+        }
+        a {
+          background-color: rgb(0, 155, 155);
+          padding: 0.75rem 1.5rem;
+          margin: 10rem 0rem;
+          font-size: 1.5rem;
+          color: white;
+          border: none;
+          border-radius: 1rem;
+          cursor: pointer;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightgray;
+  div.logo {
+    display: flex;
+    margin: 1rem 0rem;
+    align-items: center;
+    img {
+      width: 6vw;
+      height: 6vw;
+    }
+  }
+  nav {
+    width: 30%;
+    ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      align-items: center;
+      li {
+        a {
+          color: black;
+          // margin: 1rem 1rem;
+          text-decoration: none;
+          font-size: 1.35rem;
+          margin: 1.5rem 0.5rem;
+        }
+      }
+    }
+  }
+  div.SNS {
+    width: 30%;
+    ul {
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      li {
+        a {
+          img {
+            width: 3vw;
+            margin: 1.5rem 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// scroll bar setting
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 155, 155);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 125, 125);
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    div.logo {
+      margin: 0.5rem;
+      font-size: 0.8rem;
+      img {
+        width: 15vw;
+        height: 15vw;
+      }
+    }
+  }
+  main {
+    section.backImage {
+      h3 {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  footer {
+    div.SNS {
+      ul {
+        li {
+          a {
+            img {
+              width: 10vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  header {
+    div.logo {
+      font-size: 0.75rem;
+      img {
+        width: 15vw;
+        height: 15vw;
+      }
+    }
+
+    nav {
+      ul {
+        li {
+          a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  main {
+    section.backImage {
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 330px) {
+  header {
+    div.logo {
+      font-size: 0.65rem;
+      img {
+        width: 15vw;
+        height: 15vw;
+      }
+    }
+  }
+  main {
+    section.second {
+      section.cards {
+        div.card {
+          h4 {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  header {
+    div.logo {
+      font-size: 0.5rem;
+      img {
+        width: 15vw;
+        height: 15vw;
+      }
+    }
+    nav {
+      ul {
+        li {
+          a {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+  main {
+    section.backImage {
+      h3 {
+        font-size: 1.2rem;
+      }
+    }
+    section.second {
+      section.cards {
+        div.card {
+          h4 {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    div.logo {
+      font-size: 0.8rem;
+    }
+    nav {
+      ul {
+        li {
+          a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
