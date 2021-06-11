@@ -651,9 +651,15 @@ footer div.freepik {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 650px;
             flex: 1 1 650px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   main section.picture img {
-    width: 25vw;
+    width: 80%;
   }
   main section.picture div.orangeRect {
     display: none;

@@ -603,8 +603,10 @@ footer {
     }
     section.picture {
       flex: 1 1 650px;
+      display: flex;
+      justify-content: center;
       img {
-        width: 25vw;
+        width: 80%;
       }
       div.orangeRect {
         display: none;
